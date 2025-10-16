@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>eCourts Cause List</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>eCourts Real-time Cause List </h1>
+    <div class="form">
+      <label>State</label>
+      <select id="state"></select>
+
+      <label>District</label>
+      <select id="district"></select>
+
+      <label>Court Complex</label>
+      <select id="complex"></select>
+
+      <label>Court Name (optional)</label>
+      <select id="court"></select>
+
+      <label>Date</label>
+      <input type="date" id="date"/>
+
+      <button id="download">Download Cause List PDF</button>
+    </div>
+
+    <pre id="log"></pre>
+
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
